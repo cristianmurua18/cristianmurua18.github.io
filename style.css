@@ -1,0 +1,145 @@
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* comparten varios */
+
+.fila {
+    display: flex;
+    
+    
+
+}
+
+h2 {
+    text-align: center;
+    padding-top: 5px;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px 10px;
+
+}
+
+p {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.interlineado {
+    line-height: 2em;
+}
+header {
+    background-image: linear-gradient(-225deg, #A8BFFF 0%, #884D80 100%);;
+}
+
+/* navegador */
+
+.enlace {
+    color: black;
+    padding: 5px 5px;
+    border-style: solid;
+    border-color:white;
+    border-radius: 40px;
+}
+
+.enlace:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#menu {
+    /* overflow: auto; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#menu ul {
+    text-align: center;
+}
+
+#menu ul li {
+    /* Para hacer la etiqueta li de linea */
+    display: inline;
+    padding: 30px;
+    max-width: 100%;
+}
+
+/* sobre mi */
+#sobremi {
+    background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;
+    padding: 20px 0px;
+    height: 530px;
+}
+
+
+.fila-mitad {
+    width: 50%;
+    
+}
+
+
+/* habilidades */
+
+img {
+    width: 100%;
+}
+
+/* contacto */
+
+.formulario {
+    background-color: #7CFC00;
+
+}
+
+#form {
+    background-color: #7CFC00;
+}
+
+.errores {
+    color: red;
+}
+
+.contenedor {
+    padding: 10px;
+    background-color: aliceblue;
+    margin: 0 auto;
+    width: 300px;
+    border-radius: 3px;
+    display: grid;
+}
+
+button {
+    border: solid;
+    padding: 5px 5px;
+    border-radius: 20px;
+}
+
+input, textarea {
+    border: solid;
+    outline: none;
+    padding: 10px 10px;
+    margin: 5px 5px;
+}
+
+input:focus {
+    border-color: green;
+}
+
+textarea:focus {
+    border-color: green;
+}
+
+#pie {
+    background-color: aqua;
+    padding: 5px 50%;
+}
