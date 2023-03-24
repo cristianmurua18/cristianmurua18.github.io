@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio CM</title>
+    <link rel="shortcut icon" href="favicon.png">
 </head>
 <body>
     <header>
@@ -19,78 +20,81 @@
     </header>
 
     <section id="sobremi">
-        <h2>SOBRE MI</h2>
+        <h2>SOBRE MI <i class="fa fa-home" aria-hidden="true"></i></h2>
         <div class="fila">
             <div class="fila-mitad">
-                <h3>Estudios</h3>
-                <p>Analista en Computacion - FAMAF</p>
-                <p>Tecnicatura Superior en
-                    Desarrollo Web y Aplicaciones Digitales - ISPC</p>
-                <p>Cursos varios de desarollo web</p>
+                <h3>Estudios <i class="fa fa-book"></i></h3>
+                <p>Analista en Computacion - FAMAF <i class="fa fa-university" aria-hidden="true"></i></i></p>
+                <p>
+                    Tecnicatura Superior en
+                    Desarrollo Web y Aplicaciones Digitales - ISPC <i class="fa fa-building" aria-hidden="true"></i>
+                </p>
+                <p>Cursos varios de desarollo web <i class="fa fa-laptop" aria-hidden="true"></i></p>
                 <h3>Cursos</h3>
-                <p>Introduccion a la programacion con Python</p>
-                <p>HTML, CSS y Javascript con Jon Mircha</p>
-                <p>.NET y C#</p>
-                <h3>Hobbies</h3>
-                <p>Jugar al futbol</p>
-                <p>Programar</p>
+                <p>Introduccion a la programacion con Python <i class="fa fa-product-hunt" aria-hidden="true"></i></p>
+                <p>HTML <i class="fa fa-html5" aria-hidden="true"></i>, CSS <i class="fa fa-css3" aria-hidden="true"></i> y Javascript con Jon Mircha</p>
+                <p>.NET y C# <i class="fa fa-code" aria-hidden="true"></i></p>
+                <h3>Hobbies <i class="fa fa-heart" aria-hidden="true"></i></h3>
+                <p>Jugar al futbol <i class="fa fa-futbol-o" aria-hidden="true"></i></p>
+                <p>Programar <i class="fa fa-laptop" aria-hidden="true"></i></p>
             </div>
             <div class="fila-mitad">
-                <h3>Algo personal</h3>
-                <p class="interlineado">
-                    Soy un joven que encontro una pasion en el desarrollo, enfocado en la facultad para poder aprender todo lo 
+                <h3>Algo personal <i class="fa fa-copyright" aria-hidden="true"></i></h3>
+                <p class="interlineado" >
+                    Soy un joven que encontro una pasion en el desarrollo, enfocado en la facultad para poder aprender todo lo
                     relacionado a la tarea, con mucha capicidad y sobre todo constancia para lograr los objetivos.
                 </p>
-                <h3>Objetivos</h3>
+                <h3>Objetivos <i class="fa fa-newspaper-o" aria-hidden="true"></i></h3>
                 <p class="interlineado">
                     Mi gran objetivo es formar parte de una gran empresa, la cual permita insertarme en el mercado laboral
-                    para asi poder demostrar mis habilidades y proactividad en el desempeño de las tareas encomendadas.   
+                    para asi poder demostrar mis habilidades y proactividad en el desempeño de las tareas encomendadas.
                 </p>
-                <h3>Datos personales</h3>
+                <h3>Datos personales <i class="fa fa-address-card-o" aria-hidden="true"></i></h3>
                 <p>Nombre completo: Murua Ayosa Christian Jose</p>
             </div>
         </div>
     </section>
 
     <section id="habilidades">
-        <h2>HABILIDADES</h2>
+        <h2>HABILIDADES <i class="fa fa-mouse-pointer" aria-hidden="true"></i></h2>
         <div class="fila">
             <div>
-                <img class="img" src="Html5.png" alt="">
+                <a href="https://www.w3schools.com/html/default.asp" target="_blank"><img class="img" src="Html5.png" alt=""></a>
             </div>
             <div>
-                <img class="img" src="css.png" alt="">
+                <a href="https://www.w3schools.com/css/default.asp" target="_blank"><img class="img" src="css.png" alt=""></a>
             </div>
             <div>
-                <img class="img" src="js.png" alt="">
+                <a href="https://www.w3schools.com/js/default.asp" target="_blank"><img class="img" src="js.png" alt=""></a>
             </div>
         </div>
     </section>
 
     <section id="contacto">
         <div class="formulario">
-            <h2>CONTACTO</h2>
-                <form id="form" action="" class="contenedor">
-                    <input id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre completo" > 
-                    <br>
-                    <input id="correo" type="email" name="correo" placeholder="Escribe tu correo" >
-                    <br>
-                    <input id="telefono" type="number" name="telefono" placeholder="Escribe tu telefono" > 
-                    <br>
-                    <textarea placeholder="Escribe una pequeña descripcion de la consulta" cols="30" rows="10" required></textarea>
-                    <br>
-                    <button type="submit">Enviar informacion</button>
-                    <br>
-                    <p id="errores" class="errores"></p>
-                </form>
+            <h2>CONTACTO <i class="fa fa-envelope-o" aria-hidden="true"></i></h2>
+            <form id="form" class="contenedor">
+                <input id="nombre" type="text" name="nombre" placeholder="Escribe tu nombre completo">
+                <br>
+                <input id="email" type="email" name="email" placeholder="Escribe tu email">
+                <br>
+                <input id="telefono" type="number" name="telefono" placeholder="Escribe tu telefono">
+                <br>
+                <textarea id="consulta" name="consulta" placeholder="Escribe una pequeña descripcion de la consulta" cols="30" rows="10" required></textarea>
+                <br>
+                <button type="submit">Enviar informacion <i class="fa fa-thumbs-o-up" aria-hidden="true"></i></button>
+                <br>
+                <p id="errores" class="errores"></p>
+            </form>
         </div>
     </section>
     <footer id="pie">
-        <div>
+        <div class="pie-centrado">
             <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/cristianmuruaa" target="_blank">Sigueme</a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/b845535432.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 </body>
 </html>

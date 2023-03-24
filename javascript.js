@@ -3,7 +3,7 @@
 // Creo las constantantes para almacenar los valores ingresados al formulario
 
 const nombre = document.getElementById("nombre")
-const email = document.getElementById("correo")
+const email = document.getElementById("email")
 const numero = document.getElementById("telefono")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("errores")
@@ -31,14 +31,19 @@ form.addEventListener("submit", e=>{
     }
 
     if(!validaremail.test(email.value)){
-        errores += 'El correo no es valido, respeta el formato <br>'
+        errores += 'El email no es valido, respeta el formato <br>'
         entrar = true
     } 
 
     if(entrar){
         parrafo.innerHTML = errores
-    }else{
-        parrafo.innerHTML = "Formulario Enviado"
+    } else {
+
+        nombre.value = ""
+        email.value = ""
+        telefono.value = ""
+        consulta.value = ""
+        parrafo.innerHTML = "Formulario Enviado" 
     }
-    
 })
+
