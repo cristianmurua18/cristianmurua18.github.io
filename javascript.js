@@ -8,10 +8,9 @@ const numero = document.getElementById("telefono")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("errores")
 
-// Escucho un evento del form, que es cuando se haga click para su envio. Cuando se ejecuta, ejecuto tambien
-// una funcion 
+// Creo una funcion para validar el formulario 
 
-form.addEventListener("submit", e=>{
+function validacion(form) {
     e.preventDefault()
     let errores = ""
     let entrar = false
@@ -20,7 +19,7 @@ form.addEventListener("submit", e=>{
 // Hace las validaciones necesarias para cumplir con los datos minimos necesarios para poder
 // enviar el formulario
 
-    if(nombre.value.length <6){
+    if(form[0].value.length <6){
        errores += 'El nombre no es valido, debe tener mas de 6 caracteres <br>'
        entrar = true
     }
@@ -38,12 +37,11 @@ form.addEventListener("submit", e=>{
     if(entrar){
         parrafo.innerHTML = errores
     } else {
-
         nombre.value = ""
         email.value = ""
         telefono.value = ""
         consulta.value = ""
         parrafo.innerHTML = "Formulario Enviado" 
     }
-})
+}
 
