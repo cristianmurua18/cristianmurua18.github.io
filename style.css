@@ -63,13 +63,18 @@ header {
 
 
 #menu ul {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text-align: center;
+    align-items: center; */
 }
 
 #menu ul li {
     /* Para hacer la etiqueta li de linea */
     display: inline;
-    padding: 30px;
+    padding: 10px;
     max-width: 100%;
 }
 
