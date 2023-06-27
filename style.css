@@ -7,7 +7,10 @@
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+html {
+            scroll-behavior: smooth;
+            /* para una navegacion mas interactiva. No tan tosca, cuando hago scroll */
+        }
 /* comparten varios */
 
 .fila {
